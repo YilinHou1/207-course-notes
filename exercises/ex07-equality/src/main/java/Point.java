@@ -3,15 +3,12 @@ import java.util.Objects;
 /**
  * Exercise (Chapter 2: Classes) — overriding {@code toString}, {@code equals},
  * and {@code hashCode}.
- *
  * Every class inherits these methods from {@code Object}, but the defaults
  * compare by identity (are these the *same* object?) rather than by value.
  * Override the three methods below so two points with the same coordinates are
  * treated as equal. Edit only this file.
- *
  * Remember the contract: if {@code a.equals(b)} is true, then
  * {@code a.hashCode() == b.hashCode()} must also be true.
- *
  * Relevant reading: 2.6.1. toString, 2.6.2. equals, 2.6.3. hashCode.
  */
 public class Point {
@@ -58,7 +55,7 @@ public class Point {
    */
   @Override
   public boolean equals(Object o) {
-    if(o isinstanceof Point){
+    if(o instanceof Point){
       Point other = (Point) o;
       return this.x == other.x && this.y == other.y;
     }

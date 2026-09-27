@@ -1,11 +1,9 @@
 /**
  * Exercise (Chapter 2: Classes) — overloading, constructors, and static methods.
- *
  * "Overloading" means having several methods (or constructors) with the same
  * name that differ in their parameters. Complete the bodies below so the three
  * `hash` methods and the two constructors behave as documented, then run
  * MyHashingTest. Edit only this file.
- *
  * Relevant reading: 2.4. Constructors, 2.5. Overloading methods, 2.7. Static
  * methods.
  */
@@ -38,8 +36,8 @@ public class MyHashing {
    * @return the seed value from before this call
    */
   public int hash(int value) {
-    int oldseed=seed
-    seed=value
+    int oldseed=seed;
+    seed=value;
     return oldseed;
   }
 
